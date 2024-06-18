@@ -61,7 +61,7 @@ const Login = () => {
                                 feedbackType="invalid"
                             />
                         </Form.Group>
-                        <Button type="submit">Login</Button>
+                        <a href='/dashboard' className='btn btn-login' type="submit">Login</a>
                     </Form>
                     <Col lg={12} className='text-center mt-5'>
                         <p>

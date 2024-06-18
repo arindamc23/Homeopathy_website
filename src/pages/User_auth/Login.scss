@@ -120,7 +120,7 @@
                 font-weight: 500;
                 color: #4682a9;
             }
-            button{
+            .btn-login{
                 width: 100%;
                 height: 50px;
                 border-radius: 30px;
@@ -128,6 +128,8 @@
                 background-color: #4682a9 !important;
                 color: #fff;
                 border: 0;
+                line-height: 2;
+                font-size: 18px;
             }
 
             ::placeholder {

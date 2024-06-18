@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 const UserDashboard = () => {
     return (
-        <Container>
+        <Container fluid className='wrapper-body'>
         <Row>
             <Col>
                 <p>Dashboard</p>

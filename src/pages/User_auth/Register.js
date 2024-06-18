@@ -67,7 +67,7 @@ const Login = () => {
                                 placeholder="password"
                             />
                         </Form.Group>
-                        <Button variant="primary" onClick={handleShow}>Send OTP</Button>
+                        <Button variant="primary" className='btn btn-login' onClick={handleShow}>Send OTP</Button>
                     </Form>
                     <Col lg={12} className='text-center mt-5'>
                         <p>
