@@ -5,7 +5,7 @@ import DashboardHeader from './components/DashboardHeader';
 import Login from './pages/User_auth/Login';
 import Register from './pages/User_auth/Register';
 import Home from './pages/Frontend/Home';
-import UserDashboard from './pages/Patient _dashboard/UserDashboard';
+import AdminDashboard from './pages/SuperAdmin/AdminDashboard';
 import './assets/scss/Global.scss'; // Global styles
 import About from './pages/Frontend/About';
 
@@ -33,13 +33,24 @@ const App = () => {
     return <Header className="header" />;
   };
 
+  function usePageViews() {
+    let location = useLocation();
+
+    useEffect(() => {
+        document.title = `Homeopathy | ${location.pathname.slice(1) || 'Home'} `;
+    }, [location]);
+
+    return null;
+}
+
   return (
     <>
       {renderHeader()}
+      {usePageViews()}
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<UserDashboard />} />
+        <Route path="/dashboard" element={<AdminDashboard />} />
         <Route path="/" element={<Home />} />
         <Route path="/about_us" element={<About />} />
       </Routes>

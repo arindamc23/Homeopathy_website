@@ -12,6 +12,7 @@
     "primereact": "^10.6.6",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
+    "react-date-range": "^2.0.1",
     "react-dom": "^18.3.1",
     "react-magic": "^0.2.4",
     "react-magic-motion": "^1.1.2",
@@ -20,6 +21,7 @@
     "react-phone-number-input": "^3.4.3",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
+    "react-tooltip": "^5.27.0",
     "remixicon": "^4.3.0",
     "web-vitals": "^2.1.4"
   },
